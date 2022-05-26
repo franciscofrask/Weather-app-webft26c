@@ -5,11 +5,12 @@ export default function SearchBar(onSearch) {
   function handleOnSearch(){
     if(typeof onSearch === "function"){
       const input = document.getElementById("search-bar-input")
-      onSearch(input.value)
+      onSearch(input.value);
     }
   }
-  return <div>
-    <input id="search-bar-input"type="text"/>
+  return (
+  <div>
+    <input id="search-bar-input" />
     <button onClick={handleOnSearch}>Agregar</button>
-  </div>
+  </div>);
 };
