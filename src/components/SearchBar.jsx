@@ -13,4 +13,4 @@ export default function SearchBar(onSearch) {
     <input id="search-bar-input" />
     <button onClick={handleOnSearch}>Agregar</button>
   </div>);
-};
+};  
